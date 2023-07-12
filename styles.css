@@ -43,9 +43,7 @@ h1 {
 	cursor: pointer;
 }
 
-.button-resetgame:active {
-	outline: none;
-}
+
 
 #button-1{
 	border-bottom: 1px solid rgb(246, 143, 255);
@@ -109,14 +107,50 @@ h1 {
 	margin-bottom: -20px;
 }
 
+.button-resetgame:active {
+	outline: none;
+}
 
-.resetdiv{
+
+.button-playagain {
+	box-sizing: border-box;
+	width: 120px;
+	height: 60px;
+	border: 1px solid rgb(246, 143, 255);
+	border-radius: 8px;
+	background-color: 1px solid rgb(254, 243, 255);
+	color: rgb(255, 0, 191);
+	font-size: 22px;
+	cursor: pointer;
+	margin-bottom: -20px;
+}
+
+.button-playagain:active {
+	outline: none;
+}
+
+
+
+
+
+
+
+.resetdiv-wrapper{
  display:flex;
  flex-direction: row;
  justify-content: center;
  align-items: center;
 }
 
+
+.resetdiv-container{
+	display:flex;
+	width:50%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+   }
+   
 
 .info {
 	color: rgb(255, 0, 191);
