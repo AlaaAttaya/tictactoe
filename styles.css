@@ -1,0 +1,143 @@
+
+.names-input{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+.players-wrapper{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	color: rgb(255, 0, 191);
+	font-size: 40px;
+	margin-bottom: -10px;
+}
+
+
+
+.tictactoe-table {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+}
+
+.row-button {
+	border: none;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button-resetgame:active {
+	outline: none;
+}
+
+#button-1{
+	border-bottom: 1px solid rgb(246, 143, 255);
+	border-right: 1px solid rgb(246, 143, 255);
+}
+
+#button-2 {
+	border-bottom: 1px solid rgb(246, 143, 255);
+	border-right: 1px solid rgb(246, 143, 255);
+	border-left: 1px solid rgb(246, 143, 255);
+}
+
+#button-3 {
+	border-bottom: 1px solid rgb(246, 143, 255);
+	border-left: 1px solid rgb(246, 143, 255);
+}
+
+#button-4  {
+	border-top: 1px solid rgb(246, 143, 255);
+	border-bottom: 1px solid rgb(246, 143, 255);
+	border-right: 1px solid rgb(246, 143, 255);
+}
+	
+#button-5 {
+	border: 1px solid rgb(246, 143, 255);
+}
+
+#button-6 {
+	border-top: 1px solid rgb(246, 143, 255);
+	border-bottom: 1px solid rgb(246, 143, 255);
+	border-left: 1px solid rgb(246, 143, 255);
+}
+
+#button-7 {
+	border-top: 1px solid rgb(246, 143, 255);
+	border-right: 1px solid rgb(246, 143, 255);
+}
+
+#button-8 {
+	border-top: 1px solid rgb(246, 143, 255);
+	border-right: 1px solid rgb(246, 143, 255);
+	border-left: 1px solid rgb(246, 143, 255);
+}
+
+#button-9 {
+	border-top: 1px solid rgb(246, 143, 255);
+	border-left: 1px solid rgb(246, 143, 255);
+}
+
+
+.button-resetgame {
+	box-sizing: border-box;
+	width: 120px;
+	height: 60px;
+	border: 1px solid rgb(246, 143, 255);
+	border-radius: 8px;
+	background-color: 1px solid rgb(254, 243, 255);
+	color: rgb(255, 0, 191);
+	font-size: 22px;
+	cursor: pointer;
+	margin-bottom: -20px;
+}
+
+
+.resetdiv{
+ display:flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.info {
+	color: rgb(255, 0, 191);
+	font-size: 23px;
+}
+
+/* Main Container */
+.tictactoe-container {
+	text-align: center;
+}
+
+/* Game Instruction Text */
+.nametext {
+	width:80%;
+	color: rgb(164, 6, 255)
+}
+
+.score{
+	border: none;
+	height:50px;
+	width:50px;
+    color: rgb(255, 0, 191);
+}
+

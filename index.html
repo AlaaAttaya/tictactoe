@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="tictactoe-container">
+		<div class="names-input">
+			<h1>TIC-TAC-TOE</h1>
+			<br>
+			<div class="players-wrapper">
+				<div class="playerdiv">
+					<b>Player X:</b>
+					<br>
+					<input type="text" class="nametext" id="player1" value="Player X">
+					<br>
+					<b>Score:</b><input type="text" class="score" id="player1-score" value="0" readonly>
+				</div>
+				<div class="playerdiv">
+					<b>Player O:</b>
+					<br>
+					<input type="text" class="nametext" id="player2" value="Player O">
+					<br>
+					<b>Score:</b>
+					<input type="text" class="score" id="player1-score" value="0" readonly>
+				</div>
+				<div class="Info">
+
+				</div>
+	        </div>
+
+        </div>
+        <hr>
+		<div class="tictactoe-table">
+			<div class="row">
+				<input type="text" id= "button-1" class="row-button"  readonly>
+				<input type="text" id= "button-2" class="row-button"  readonly>
+				<input type="text" id= "button-3" class="row-button"  readonly>
+			</div>
+			<div class="row">
+				<input type="text" id= "button-4" class="row-button"  readonly>
+				<input type="text" id= "button-5" class="row-button"  readonly>
+				<input type="text" id= "button-6" class="row-button"  readonly>
+			</div>
+			<div class="row">
+				<input type="text" id= "button-7" class="row-button"  readonly>
+				<input type="text" id= "button-8" class="row-button"  readonly>
+				<input type="text" id= "button-9" class="row-button"  readonly>
+			</div>
+		</div>
+		<hr>
+		<div class="resetdiv">
+			<button class="button-resetgame">
+				RESET GAME
+			</button>
+	
+		</div>
+
+        </div>
+
+</body>
+</html>
