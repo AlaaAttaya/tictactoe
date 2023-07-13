@@ -157,6 +157,7 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b2btn.style.color = "rgb(40, 238, 167)";
 		b3btn.style.color = "rgb(40, 238, 167)";
+        
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
