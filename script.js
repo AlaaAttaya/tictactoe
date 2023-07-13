@@ -147,7 +147,8 @@ function checkWinner() {
 	
 	if ((document.getElementById("button-1").value == 'x' || document.getElementById("button-1").value == 'X') && ( document.getElementById("button-2").value == 'x' ||
 		 document.getElementById("button-2").value == 'X') && (document.getElementById("button-3").value == 'x' || document.getElementById("button-3").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
+
 		b4btn.disabled = true;
 		b5btn.disabled = true;
 		b6btn.disabled = true;
@@ -157,13 +158,18 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b2btn.style.color = "rgb(40, 238, 167)";
 		b3btn.style.color = "rgb(40, 238, 167)";
-        
+		document.getElementById("strike-through1").setAttribute("class","strikerow");
+		document.getElementById("strike-through2").setAttribute("class","strikerow");
+		document.getElementById("strike-through3").setAttribute("class","strikerow");
+
+
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if ((document.getElementById("button-1").value == 'x' || document.getElementById("button-1").value == 'X') && (document.getElementById("button-4").value == 'x' ||
 		document.getElementById("button-4").value == 'X') && (document.getElementById("button-7").value == 'x' || document.getElementById("button-7").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
 		b2btn.disabled = true;
 		b3btn.disabled = true;
 		b5btn.disabled = true;
@@ -174,12 +180,18 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b4btn.style.color = "rgb(40, 238, 167)";
 		b7btn.style.color = "rgb(40, 238, 167)";
+
+
+		document.getElementById("strike-through1").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through4").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through7").setAttribute("class","strikecolumn");
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if ((document.getElementById("button-7").value == 'x' || document.getElementById("button-7").value == 'X') && (document.getElementById("button-8").value == 'x' ||
 		document.getElementById("button-8").value == 'X') && (document.getElementById("button-9").value == 'x' || document.getElementById("button-9").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b3btn.disabled = true;
@@ -190,12 +202,19 @@ function checkWinner() {
 		b7btn.style.color = "rgb(40, 238, 167)";
 		b8btn.style.color = "rgb(40, 238, 167)";
 		b9btn.style.color = "rgb(40, 238, 167)";
+
+
+
+		document.getElementById("strike-through7").setAttribute("class","strikerow");
+		document.getElementById("strike-through8").setAttribute("class","strikerow");
+		document.getElementById("strike-through9").setAttribute("class","strikerow");			
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if ((document.getElementById("button-3").value == 'x' || document.getElementById("button-3").value == 'X') && (document.getElementById("button-6").value == 'x' ||
 		document.getElementById("button-6").value == 'X') && (document.getElementById("button-9").value == 'x' || document.getElementById("button-9").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b4btn.disabled = true;
@@ -206,12 +225,19 @@ function checkWinner() {
 		b3btn.style.color = "rgb(40, 238, 167)";
 		b6btn.style.color = "rgb(40, 238, 167)";
 		b9btn.style.color = "rgb(40, 238, 167)";
+
+
+
+		document.getElementById("strike-through3").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through6").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through9").setAttribute("class","strikecolumn");
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if ((document.getElementById("button-1").value == 'x' || document.getElementById("button-1").value == 'X') && (document.getElementById("button-5").value == 'x' ||
 		document.getElementById("button-5").value == 'X') && (document.getElementById("button-9").value == 'x' || document.getElementById("button-9").value == 'X')) {
-		document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+		document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
 		b2btn.disabled = true;
 		b3btn.disabled = true;
 		b4btn.disabled = true;
@@ -222,12 +248,18 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b9btn.style.color = "rgb(40, 238, 167)";
+
+		document.getElementById("strike-through1").setAttribute("class","strikediag-left");
+		document.getElementById("strike-through5").setAttribute("class","strikediag-left");
+		document.getElementById("strike-through9").setAttribute("class","strikediag-left");
+
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if ((document.getElementById("button-3").value == 'x' || document.getElementById("button-3").value == 'X') && (document.getElementById("button-5").value == 'x' ||
 		document.getElementById("button-5").value == 'X') && (document.getElementById("button-7").value == 'x' || document.getElementById("button-7").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b4btn.disabled = true;
@@ -238,12 +270,19 @@ function checkWinner() {
 		b3btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b7btn.style.color = "rgb(40, 238, 167)";
+
+
+
+		document.getElementById("strike-through3").setAttribute("class","strikediag-right");
+		document.getElementById("strike-through5").setAttribute("class","strikediag-right");
+		document.getElementById("strike-through7").setAttribute("class","strikediag-right");
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if (( document.getElementById("button-2").value == 'x' ||  document.getElementById("button-2").value == 'X') && (document.getElementById("button-5").value == 'x' ||
 		document.getElementById("button-5").value == 'X') && (document.getElementById("button-8").value == 'x' || document.getElementById("button-8").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins"+ "<br>" + document.getElementById("player2").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b4btn.disabled = true;
@@ -254,12 +293,18 @@ function checkWinner() {
 		b2btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b8btn.style.color = "rgb(40, 238, 167)";
+
+
+		document.getElementById("strike-through2").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through5").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through8").setAttribute("class","strikecolumn");
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 	else if ((document.getElementById("button-4").value == 'x' || document.getElementById("button-4").value == 'X') && (document.getElementById("button-5").value == 'x' ||
 		document.getElementById("button-5").value == 'X') && (document.getElementById("button-6").value == 'x' || document.getElementById("button-6").value == 'X')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player1").value + " Wins" + "<br>" + document.getElementById("player2").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b3btn.disabled = true;
@@ -270,13 +315,18 @@ function checkWinner() {
 		b4btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b6btn.style.color = "rgb(40, 238, 167)";
+
+		document.getElementById("strike-through4").setAttribute("class","strikerow");
+		document.getElementById("strike-through5").setAttribute("class","strikerow");
+		document.getElementById("strike-through6").setAttribute("class","strikerow");
+
         scoreX+=1;
         document.getElementById("player1-score").value=scoreX;
 	}
 
 	else if ((document.getElementById("button-1").value == 'O' || document.getElementById("button-1").value == 'O') && ( document.getElementById("button-2").value == 'O' ||
 		 document.getElementById("button-2").value == 'O') && (document.getElementById("button-3").value == 'O' || document.getElementById("button-3").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b4btn.disabled = true;
 		b5btn.disabled = true;
 		b6btn.disabled = true;
@@ -287,12 +337,17 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b2btn.style.color = "rgb(40, 238, 167)";
 		b3btn.style.color = "rgb(40, 238, 167)";
+
+		document.getElementById("strike-through1").setAttribute("class","strikerow");
+		document.getElementById("strike-through2").setAttribute("class","strikerow");
+		document.getElementById("strike-through3").setAttribute("class","strikerow");
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if ((document.getElementById("button-1").value == 'O' || document.getElementById("button-1").value == 'O') && (document.getElementById("button-4").value == 'O' ||
 		document.getElementById("button-4").value == 'O') && (document.getElementById("button-7").value == 'O' || document.getElementById("button-7").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b2btn.disabled = true;
 		b3btn.disabled = true;
 		b5btn.disabled = true;
@@ -303,12 +358,20 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b4btn.style.color = "rgb(40, 238, 167)";
 		b7btn.style.color = "rgb(40, 238, 167)";
+
+
+		document.getElementById("strike-through1").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through4").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through7").setAttribute("class","strikecolumn");
+
+
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if ((document.getElementById("button-7").value == 'O' || document.getElementById("button-7").value == 'O') && (document.getElementById("button-8").value == 'O' ||
 		document.getElementById("button-8").value == 'O') && (document.getElementById("button-9").value == 'O' || document.getElementById("button-9").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b3btn.disabled = true;
@@ -319,12 +382,19 @@ function checkWinner() {
 		b7btn.style.color = "rgb(40, 238, 167)";
 		b8btn.style.color = "rgb(40, 238, 167)";
 		b9btn.style.color = "rgb(40, 238, 167)";
+
+
+		document.getElementById("strike-through7").setAttribute("class","strikerow");
+		document.getElementById("strike-through8").setAttribute("class","strikerow");
+		document.getElementById("strike-through9").setAttribute("class","strikerow");	
+
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if ((document.getElementById("button-3").value == 'O' || document.getElementById("button-3").value == 'O') && (document.getElementById("button-6").value == 'O' ||
 		document.getElementById("button-6").value == 'O') && (document.getElementById("button-9").value == 'O' || document.getElementById("button-9").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b4btn.disabled = true;
@@ -334,12 +404,19 @@ function checkWinner() {
 		b3btn.style.color = "rgb(40, 238, 167)";
 		b6btn.style.color = "rgb(40, 238, 167)";
 		b9btn.style.color = "rgb(40, 238, 167)";
+
+
+
+		document.getElementById("strike-through3").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through6").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through9").setAttribute("class","strikecolumn");
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if ((document.getElementById("button-1").value == 'O' || document.getElementById("button-1").value == 'O') && (document.getElementById("button-5").value == 'O' ||
 		document.getElementById("button-5").value == 'O') && (document.getElementById("button-9").value == 'O' || document.getElementById("button-9").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b2btn.disabled = true;
 		b3btn.disabled = true;
 		b4btn.disabled = true;
@@ -350,12 +427,18 @@ function checkWinner() {
 		b1btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b9btn.style.color = "rgb(40, 238, 167)";
+
+
+		document.getElementById("strike-through1").setAttribute("class","strikediag-left");
+		document.getElementById("strike-through5").setAttribute("class","strikediag-left");
+		document.getElementById("strike-through9").setAttribute("class","strikediag-left");
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if ((document.getElementById("button-3").value == 'O' || document.getElementById("button-3").value == 'O') && (document.getElementById("button-5").value == 'O' ||
 		document.getElementById("button-5").value == 'O') && (document.getElementById("button-7").value == 'O' || document.getElementById("button-7").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins"+ "<br>" + document.getElementById("player1").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b4btn.disabled = true;
@@ -366,12 +449,17 @@ function checkWinner() {
 		b3btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b7btn.style.color = "rgb(40, 238, 167)";
+
+		document.getElementById("strike-through3").setAttribute("class","strikediag-right");
+		document.getElementById("strike-through5").setAttribute("class","strikediag-right");
+		document.getElementById("strike-through7").setAttribute("class","strikediag-right");
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if (( document.getElementById("button-2").value == 'O' ||  document.getElementById("button-2").value == 'O') && (document.getElementById("button-5").value == 'O' ||
 		document.getElementById("button-5").value == 'O') && (document.getElementById("button-8").value == 'O' || document.getElementById("button-8").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b1btn.disabled = true;
 		b3btn.disabled = true;
 		b4btn.disabled = true;
@@ -382,12 +470,17 @@ function checkWinner() {
 		b2btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b8btn.style.color = "rgb(40, 238, 167)";
+
+		document.getElementById("strike-through2").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through5").setAttribute("class","strikecolumn");
+		document.getElementById("strike-through8").setAttribute("class","strikecolumn");
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
 	else if ((document.getElementById("button-4").value == 'O' || document.getElementById("button-4").value == 'O') && (document.getElementById("button-5").value == 'O' ||
 		document.getElementById("button-5").value == 'O') && (document.getElementById("button-6").value == 'O' || document.getElementById("button-6").value == 'O')) {
-        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins";
+        document.getElementById('Info').innerHTML = document.getElementById("player2").value + " Wins" + "<br>" + document.getElementById("player1").value + " Turn";
 		b1btn.disabled = true;
 		b2btn.disabled = true;
 		b3btn.disabled = true;
@@ -398,6 +491,12 @@ function checkWinner() {
 		b4btn.style.color = "rgb(40, 238, 167)";
 		b5btn.style.color = "rgb(40, 238, 167)";
 		b6btn.style.color = "rgb(40, 238, 167)";
+
+		
+		document.getElementById("strike-through4").setAttribute("class","strikerow");
+		document.getElementById("strike-through5").setAttribute("class","strikerow");
+		document.getElementById("strike-through6").setAttribute("class","strikerow");
+
         scoreO+=1;
         document.getElementById("player2-score").value=scoreO;
 	}
@@ -452,6 +551,18 @@ playagain.addEventListener("click", function playAgain() {
     b8btn.style.color = "black" ;
     b9btn.style.color = "black" ;
 	
+	document.getElementById("strike-through1").removeAttribute("class");
+	document.getElementById("strike-through2").removeAttribute("class");
+	document.getElementById("strike-through3").removeAttribute("class");
+	document.getElementById("strike-through4").removeAttribute("class");
+	document.getElementById("strike-through5").removeAttribute("class");
+	document.getElementById("strike-through6").removeAttribute("class");
+	document.getElementById("strike-through7").removeAttribute("class");
+	document.getElementById("strike-through8").removeAttribute("class");
+	document.getElementById("strike-through9").removeAttribute("class");
+	
+	
 	document.getElementById("button-1").value =  document.getElementById("button-2").value = document.getElementById("button-3").value = document.getElementById("button-4").value = document.getElementById("button-5").value = document.getElementById("button-6").value = document.getElementById("button-7").value = document.getElementById("button-8").value = document.getElementById("button-9").value = '';
+	
 })
 ;
