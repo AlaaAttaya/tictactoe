@@ -1,7 +1,7 @@
 
-var flag = 1;
-var scoreX=0,scoreO=0;
-var b1btn, b2btn, b3btn, b4btn, b5btn, b6btn, b7btn, b8btn, b9btn;
+let flag = 1;
+let scoreX=0,scoreO=0;
+let b1btn, b2btn, b3btn, b4btn, b5btn, b6btn, b7btn, b8btn, b9btn;
     
 b1btn = document.getElementById("button-1");
 b2btn = document.getElementById("button-2");
