@@ -4,7 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="script.js"></script>
+	
 </head>
 
 <body>
@@ -16,17 +16,18 @@
 				<div class="playerdiv">
 					<b>Player X:</b>
 					<br>
-					<input type="text" class="nametext" id="player1" value="Player X">
+					<input type="text" class="nametext" id="player1" placeholder="Player X" value="Player X">
 					<br>
-					<b>Score:</b><input type="text" class="score" id="player1-score" value="0" readonly>
+					<b>Score:</b>
+					<input type="text" class="score" id="player1-score" value="0" readonly>
 				</div>
 				<div class="playerdiv">
 					<b>Player O:</b>
 					<br>
-					<input type="text" class="nametext" id="player2" value="Player O">
+					<input type="text" class="nametext" id="player2" placeholder="Player O" value="Player O">
 					<br>
 					<b>Score:</b>
-					<input type="text" class="score" id="player1-score" value="0" readonly>
+					<input type="text" class="score" id="player2-score" value="0" readonly>
 				</div>
 			
 	        </div>
@@ -35,31 +36,31 @@
         <hr>
 		<div class="tictactoe-table">
 			<div class="row">
-				<input type="text" id= "button-1" class="row-button"  readonly>
-				<input type="text" id= "button-2" class="row-button"  readonly>
-				<input type="text" id= "button-3" class="row-button"  readonly>
+				<input type="text" id="button-1" class="row-button"  readonly>
+				<input type="text" id="button-2" class="row-button"  readonly>
+				<input type="text" id="button-3" class="row-button"  readonly>
 			</div>
 			<div class="row">
-				<input type="text" id= "button-4" class="row-button"  readonly>
-				<input type="text" id= "button-5" class="row-button"  readonly>
-				<input type="text" id= "button-6" class="row-button"  readonly>
+				<input type="text" id="button-4" class="row-button"  readonly>
+				<input type="text" id="button-5" class="row-button"  readonly>
+				<input type="text" id="button-6" class="row-button"  readonly>
 			</div>
 			<div class="row">
-				<input type="text" id= "button-7" class="row-button"  readonly>
-				<input type="text" id= "button-8" class="row-button"  readonly>
-				<input type="text" id= "button-9" class="row-button"  readonly>
+				<input type="text" id="button-7" class="row-button"  readonly>
+				<input type="text" id="button-8" class="row-button"  readonly>
+				<input type="text" id="button-9" class="row-button"  readonly>
 			</div>
 		</div>
 		<hr>
 		<div class="resetdiv-wrapper">
 			<div class="resetdiv-container">
-				<button class="button-resetgame">
+				<button class="button-resetgame" id="resetgame">
 					RESET GAME
 				</button>
-				<div class="Info">
+				<div class="infodiv" id="Info">
 					
 				</div>
-				<button class="button-playagain">
+				<button class="button-playagain" id="playagain">
 					PLAY AGAIN
 				</button>
 			</div>
@@ -67,7 +68,8 @@
 	
 		</div>
 
-        </div>
-
+    </div>
+	<script src="script.js"></script>
 </body>
+
 </html>
